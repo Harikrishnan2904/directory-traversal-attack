@@ -32,11 +32,6 @@ def comments():
     file = open(filename,'r')
     output = file.read()
     file.close()
-    
-    f = open("log.txt", "w+")
-    f.writelines(output)
-    f.close()
-    
     return output
 
 if __name__=="__main__":
